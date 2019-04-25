@@ -1,5 +1,6 @@
+import java.util.Comparator;
 
-public class BubbleSort implements Sort{
+public class BubbleSort<T> implements Sort<T>{
 	
 	
 	public void sortASC(int[] array) {
@@ -28,6 +29,12 @@ public class BubbleSort implements Sort{
 				
 			}
 		}
+	}
+
+	@Override
+	public void sort(T[] array, Comparator<T> comparator) {
+		// TODO Auto-generated method stub
+		
 	}
 
 

@@ -1,5 +1,6 @@
+import java.util.Comparator;
 
-public class InsertSort implements Sort{
+public class InsertSort<T> implements Sort<T>{
 
 	@Override
 	public void sortASC(int[] array) {	
@@ -28,6 +29,12 @@ public class InsertSort implements Sort{
 				}
 			}
 		}
+		
+	}
+
+	@Override
+	public void sort(T[] array, Comparator<T> comparator) {
+		// TODO Auto-generated method stub
 		
 	}
 }
